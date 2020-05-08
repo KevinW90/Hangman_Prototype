@@ -1,0 +1,56 @@
+.keyboard-wrapper {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.keyboard {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 25px;
+  margin-bottom: 10px;
+  background: var(--black);
+
+  border-radius: 20px;
+}
+
+.key-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key-row:not(:first-child) {
+  margin-top: 10px;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border: 1px solid white;
+
+  border-radius: 10px;
+}
+
+.key:not(:first-child) {
+  margin-left: 10px;
+}
+
+.guessed {
+  opacity: .3;
+}
